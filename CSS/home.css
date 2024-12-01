@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  
+h1 {
+    font-family: 'CustomFont', sans-serif; /* Use the font family */
+}
 body {
-    background-color: #000000;
+    background-color: black;
+    margin: 0px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../IMAGE/home.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color: #FFFFFF;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
