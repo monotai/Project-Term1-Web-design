@@ -43,42 +43,26 @@ body {
     padding: 10px;
     text-align: center;
 }
+
 .about {
-    position: relative;
-    display: inline-block;
-}
-
-.about-chose {
-    padding: 10px;
-    cursor: pointer;
-    background: none;
-    margin: auto;
-}
-
-.about-content {
-    max-width: 300px;
-    position: absolute;
-    top: 100%; /* Aligns the dropdown below the button */
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    position: absolute;
-    background-color: #AE6439;
-    border-radius: 5px;
-    z-index: 1;
-    padding: 10px 0;
-}
-
-.about-content a {
-    display: block;
     color: #FFFFFF;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 16px;
 }
-
-.about:hover .about-content {
+.about-chose {
+    cursor: pointer;
+}
+.about-content {
+    display: none;
+    background-color: #ae6439;
+    position: absolute;
+    width: 150px;
+}
+.about-content a {
+    color: #FFFFFF;
+    padding: 10px;
+}
+.about-chose:hover .about-content {
     display: block;
+    
 }
 .chose {
     border-bottom: 2px solid #FFFFFF;

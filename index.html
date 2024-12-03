@@ -3,91 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal Dropdown</title>
+    <title>Dropdown Example</title>
     <style>
-        /* Center the dropdown container on the page */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f9f9f9;
-            font-family: Arial, sans-serif;
-        }
+        @font-face {
+    font-family: 'CustomFont';
+    src: url('../FONT/Italianno-Regular.ttf');
+}
 
-        /* Dropdown container styling */
-        .about {
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
+h1 {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
 
-        /* "About" button styling */
-        .about-chose {
-            padding: 10px 20px;
-            cursor: pointer;
-            background: #AE6439;
-            color: #FFFFFF;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-        }
+body {
+    margin: 0;
+    background-color: black;
+}
 
-        .about-chose:hover {
-            background: #944F2D;
-        }
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../IMAGE/home.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 
-        /* Dropdown menu styling */
-        .about-content {
-            display: none;
-            position: absolute;
-            top: 100%; /* Aligns the dropdown below the button */
-            left: 50%;
-            transform: translateX(-50%); /* Centers the dropdown */
-            background-color: #AE6439;
-            border-radius: 5px;
-            z-index: 1;
-            padding: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px; /* Increased width for more content */
-            display: flex;
-            justify-content: center; /* Centers items horizontally */
-            gap: 15px; /* Adds space between items */
-        }
+/* Header Layout */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px;
+    align-items: center;
+}
 
-        /* Style each link in the dropdown */
-        .about-content a {
-            color: #FFFFFF;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 16px;
-            text-align: center;
-            background-color: #AE6439;
-            border-radius: 5px;
-            width: 100%; /* Makes each link span the full width */
-            text-align: center;
-        }
+.brand {
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
 
-        /* Hover effect for the links */
-        .about-content a:hover {
-            background-color: #944F2D;
-        }
+.menu {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
 
-        /* Show the dropdown on hover */
-        .about:hover .about-content {
-            display: block;
-        }
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #AE6439;
+}
+
+.chose {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.about-chose {
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    margin: auto;
+    font-weight: bold;
+}
+
+.about-content {
+    display: none;
+    position: absolute;
+    background-color: #AE6439;
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.about-content a {
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: aqua;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.about:hover .about-content {
+    display: block;
+}
+
+.head-left {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+}
+
+.head-left a {
+    max-width: 25px;
+    padding: 10px;
+}
+
+.sign-in {
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sign-in:hover {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.button-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 10px;
+    }
+
+    .menu {
+        grid-template-columns: repeat(2, auto);
+        gap: 15px;
+    }
+
+    .brand {
+        font-size: 28px;
+    }
+
+    .head-left {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+
+    .brand {
+        font-size: 24px;
+    }
+
+    .head-left {
+        grid-template-columns: 1fr;
+    }
+
+    .sign-in {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
     </style>
 </head>
 <body>
-    <div class="about">
-        <p class="about-chose">About</p>
-        <div class="about-content">
-            <a href="./our-story.html">Our Story</a>
-            <a href="./mobile-app.html">Mobile App</a>
-            <a href="./blog.html">Blog</a>
+    <div class="header">
+        <h1 class="brand">The Coffree</h1>
+        <div class="menu">
+            <a class="chose" href="./home.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./location.html">Location</a>
+            <div class="about">
+                <p class="about-chose">About</p>
+                <div class="about-content">
+                    <a href="./our-story.html">Our Story</a>
+                    <a href="./mobile-app.html">Mobile App</a>
+                    <a href="./blog.html">Blog</a>
+                </div>
+            </div>
+        </div>
+        <div class="head-left">
+            <a href="./cart.html"><img class="logo" src="../IMAGE/logo/Shopping-cart.png" alt="Cart"></a>
+            <a href="./profile.html"><img class="logo" src="../IMAGE/logo/User-Profile.png" alt="User Profile"></a>
+            <button class="sign-in"><a class="button-link" href="./profile.html">Sign In</a></button>
         </div>
     </div>
 </body>
