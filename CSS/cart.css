@@ -62,6 +62,13 @@ body {
     margin-right: 40px;
     padding: 10px 20px;
     border-radius: 16px;
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+}
+.button-link {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .bottom {
     display: grid;

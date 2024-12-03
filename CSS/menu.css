@@ -53,6 +53,24 @@ body {
     max-width: 20px;
     padding: 10px;
 }
+.sign-in {
+    margin: auto;
+    margin-right: 40px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+}
+.button-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #FFFFFF;
+}
 .head {
     margin: auto;
     padding: 0px 40px;
@@ -75,12 +93,6 @@ body {
     padding-left: 40px;
 }
 
-.sign-in {
-    margin: auto;
-    margin-right: 40px;
-    padding: 10px 20px;
-    border-radius: 16px;
-}
 .main {
     padding: 20px 40px;
     display: grid;

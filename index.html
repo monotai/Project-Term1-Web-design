@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Dropdown</title>
+    <style>
+        /* Center the dropdown container on the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Dropdown container styling */
+        .about {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* "About" button styling */
+        .about-chose {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #AE6439;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .about-chose:hover {
+            background: #944F2D;
+        }
+
+        /* Dropdown menu styling */
+        .about-content {
+            display: none;
+            position: absolute;
+            top: 100%; /* Aligns the dropdown below the button */
+            left: 50%;
+            transform: translateX(-50%); /* Centers the dropdown */
+            background-color: #AE6439;
+            border-radius: 5px;
+            z-index: 1;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Increased width for more content */
+            display: flex;
+            justify-content: center; /* Centers items horizontally */
+            gap: 15px; /* Adds space between items */
+        }
+
+        /* Style each link in the dropdown */
+        .about-content a {
+            color: #FFFFFF;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            background-color: #AE6439;
+            border-radius: 5px;
+            width: 100%; /* Makes each link span the full width */
+            text-align: center;
+        }
+
+        /* Hover effect for the links */
+        .about-content a:hover {
+            background-color: #944F2D;
+        }
+
+        /* Show the dropdown on hover */
+        .about:hover .about-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="about">
+        <p class="about-chose">About</p>
+        <div class="about-content">
+            <a href="./our-story.html">Our Story</a>
+            <a href="./mobile-app.html">Mobile App</a>
+            <a href="./blog.html">Blog</a>
+        </div>
+    </div>
+</body>
+</html>

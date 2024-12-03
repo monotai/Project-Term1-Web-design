@@ -43,7 +43,44 @@ body {
     padding: 10px;
     text-align: center;
 }
-.menu a:first-child {
+.about {
+    position: relative;
+    display: inline-block;
+}
+
+.about-chose {
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    margin: auto;
+}
+
+.about-content {
+    max-width: 300px;
+    position: absolute;
+    top: 100%; /* Aligns the dropdown below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    position: absolute;
+    background-color: #AE6439;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.about-content a {
+    display: block;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.about:hover .about-content {
+    display: block;
+}
+.chose {
     border-bottom: 2px solid #FFFFFF;
 }
 .head-left {
@@ -62,11 +99,12 @@ body {
     padding: 10px 20px;
     border-radius: 16px;
     cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
 }
-.bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid #FFFFFF;
+.button-link {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .follow {
     margin: auto;
