@@ -43,9 +43,7 @@ body {
     padding: 10px;
     text-align: center;
 }
-.menu a:first-child {
-    border-bottom: 2px solid #FFFFFF;
-}
+
 .head-left {
     margin: auto;
     display: grid;
@@ -56,12 +54,14 @@ body {
     max-width: 20px;
     padding: 10px;
 }
+.head-left a:first-child {
+    border-bottom: 2px solid #FFFFFF;
+}
 .sign-in {
     margin: auto;
     margin-right: 40px;
     padding: 10px 20px;
     border-radius: 16px;
-    cursor: pointer;
 }
 .bottom {
     display: grid;

@@ -8,11 +8,10 @@ h1 {
 }
 body {
     background-color: black;
-    margin: 0px;
+    margin: 0;
 }
 .container {
     width: 100vw;
-    height: 100vh;
     background-image: url(../IMAGE/home.png);
     background-position: 0 -300px;
     background-repeat: no-repeat;
@@ -20,15 +19,12 @@ body {
     background-size: cover;
     color: #FFFFFF;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
 }
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid #FFFFFF;
-}
-.brand {
-    padding-left: 40px;
 }
 .menu {
     margin: auto;
@@ -36,6 +32,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
 }
+
 .menu a {
     text-decoration: none;
     color: #FFFFFF;
@@ -43,7 +40,7 @@ body {
     padding: 10px;
     text-align: center;
 }
-.menu a:first-child {
+.menu a:nth-child(2) {
     border-bottom: 2px solid #FFFFFF;
 }
 .head-left {
@@ -56,12 +53,77 @@ body {
     max-width: 20px;
     padding: 10px;
 }
+.head {
+    margin: auto;
+    padding: 0px 40px;
+    position: relative;
+}
+.promotion {
+    filter: brightness(0.5);
+    width: 100%;
+    height: auto;
+}
+.text-overlay {
+    position: absolute;
+    top: 5%; /* Adjust the vertical position (50% will place it in the middle) */
+    left: 5%; /* Adjust the horizontal position (50% will place it in the middle) */
+    color: white; /* Set text color */
+    font-size: 38px; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+}
+.brand {
+    padding-left: 40px;
+}
+
 .sign-in {
     margin: auto;
     margin-right: 40px;
     padding: 10px 20px;
     border-radius: 16px;
-    cursor: pointer;
+}
+.main {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.cart {
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: 1fr auto auto auto;
+    padding: 20px;
+    grid-gap: 10px;
+    background-color: #FEFEFE;
+}
+.contain-product {
+    margin: auto;
+    width: 100%;
+    border-radius: 16px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.product {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cart p {
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+.order {
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 16px;
+    background-color: #AE6439;
+    border: none;
+    color: #FFFFFF;
 }
 .bottom {
     display: grid;

@@ -43,7 +43,7 @@ body {
     padding: 10px;
     text-align: center;
 }
-.menu a:first-child {
+.menu a:nth-child(4) {
     border-bottom: 2px solid #FFFFFF;
 }
 .head-left {
@@ -61,7 +61,6 @@ body {
     margin-right: 40px;
     padding: 10px 20px;
     border-radius: 16px;
-    cursor: pointer;
 }
 .bottom {
     display: grid;
