@@ -43,9 +43,6 @@ body {
     padding: 10px;
     text-align: center;
 }
-.menu a:nth-child(4) {
-    border-bottom: 2px solid #FFFFFF;
-}
 .head-left {
     margin: auto;
     display: grid;
@@ -55,6 +52,44 @@ body {
 .head-left a {
     max-width: 20px;
     padding: 10px;
+}
+.about-chose {
+    padding: 10px;
+    cursor: context-menu;
+    background: none;
+    margin: auto;
+}
+
+.about-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.about-content a {
+    max-width: none;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #AE6439;
+    display: block;
+    border: 1px solid #FFFFFF;
+}
+.about-content a:first-child {
+    border-radius: 8px 8px 0px 0px;
+}
+.about-content a:last-child {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.about:hover .about-content {
+    display: block;
+}
+.about-content:hover {
+    display: block;
+}
+.chose {
+    border-bottom: 2px solid #FFFFFF;
 }
 .sign-in {
     margin: auto;
