@@ -1,13 +1,14 @@
 @font-face {
-    font-family: 'CustomFont'; /* Name your font family */
-    src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
+    font-family: 'CustomFont';
+    src: url('../FONT/Italianno-Regular.ttf');
   }
   
 h1 {
-    font-family: 'CustomFont', sans-serif; /* Use the font family */
+    font-family: 'CustomFont';
 }
 body {
-    background-color: black;
+    background-color: #756763;
+    font-family: Arial;
     margin: 0;
 }
 .container {
@@ -24,7 +25,15 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    backdrop-filter: brightness(40%);
+}
+h1 {
+    font-weight: 100;
+}
+.header h1 {
+    font-size: 45px;
+    margin: 20px;
 }
 .menu {
     margin: auto;
@@ -111,22 +120,25 @@ body {
     border: 1px solid #FFFFFF;
 }
 .head {
-    margin: auto;
-    padding: 0px 40px;
     position: relative;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    backdrop-filter: brightness(50%);
 }
 .promotion {
-    filter: brightness(0.5);
     width: 100%;
+    filter: brightness(0.7);
     height: auto;
 }
 .text-overlay {
+    padding: 20px;
     position: absolute;
-    top: 5%; /* Adjust the vertical position (50% will place it in the middle) */
-    left: 5%; /* Adjust the horizontal position (50% will place it in the middle) */
-    color: white; /* Set text color */
-    font-size: 38px; /* Set font size */
-    font-weight: bold; /* Make the text bold */
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
 }
 .brand {
     padding-left: 40px;
@@ -137,8 +149,10 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    backdrop-filter: brightness(50%);
 }
 .cart {
+    margin: auto;
     border-radius: 16px;
     display: grid;
     grid-template-rows: 1fr auto auto auto;
@@ -179,7 +193,8 @@ body {
 .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    backdrop-filter: brightness(40%);
 }
 .follow {
     margin: auto;

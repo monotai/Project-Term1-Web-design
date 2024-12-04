@@ -1,20 +1,24 @@
 @font-face {
-    font-family: 'CustomFont'; /* Name your font family */
-    src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
+    font-family: 'CustomFont';
+    src: url('../FONT/Italianno-Regular.ttf');
   }
   
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url(../FONT/JacquesFrancois-Regular.ttf);
+}
 h1 {
-    font-family: 'CustomFont', sans-serif; /* Use the font family */
+    font-family: 'CustomFont';
 }
 body {
-    background-color: black;
     margin: 0px;
+    font-family: Arial;
+    background-color: #756763;
 }
 .container {
     width: 100vw;
-    height: 100vh;
     background-image: url(../IMAGE/home.png);
-    background-position: 0 -50px;
+    background-position: 0 -300px;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -25,7 +29,15 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    backdrop-filter: brightness(40%);
+}
+h1 {
+    font-weight: 100;
+}
+.header h1 {
+    font-size: 45px;
+    margin: 20px;
 }
 .brand {
     padding-left: 40px;
@@ -68,6 +80,7 @@ body {
     background-color: #AE6439;
     display: block;
     border: 1px solid #FFFFFF;
+    z-index: -1;
 }
 .about-content a:first-child {
     border-radius: 8px 8px 0px 0px;
@@ -101,19 +114,56 @@ body {
     padding: 10px 20px;
     border-radius: 16px;
     cursor: pointer;
-    background-color: #000000;
+    background-color: #AE6439;
     border: 2px solid #FFFFFF;
+}
+.main {
+    backdrop-filter: brightness(50%);
+    padding: 80px;
+    font-size: 20px;
+}
+.main h1 {
+    font-family: 'Jacques Francois';
+}
+.head-main {
+    display: grid;
+    width: 450px;
+    color: #AE6439;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 10px;
+}
+.head-main p {
+    margin: auto;
+}
+.main button {
+    width: 120px;
+    margin: 20px;
+    padding: 10px 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    color: #FFFFFF;
+    background-color: #AE6439;
 }
 .button-link {
     color: #FFFFFF;
     text-decoration: none;
-}
-.follow {
     margin: auto;
+}
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #FFFFFF;
+    padding: 20px;
+    backdrop-filter: brightness(40%);
+}
+
+.follow {
+    display: grid;
+    grid-gap: 10px;
+    background-color: aqua;
 }
 .follow div {
     display: grid;
-    padding: 10px;
     grid-template-columns: auto 1fr;
     grid-gap: 5px;
 }
