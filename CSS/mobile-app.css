@@ -13,7 +13,7 @@ body {
 .container {
     width: 100vw;
     background-image: url(../IMAGE/home.png);
-    background-position: 0 -300px;
+    background-position: 0 -50px;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -106,39 +106,20 @@ body {
 .button-link {
     color: #FFFFFF;
     text-decoration: none;
-    
 }
 .main {
+    text-align: center;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     padding: 20px;
     grid-gap: 20px;
-    color: #000000;
 }
-.above-main {
-    display: grid;
-    height: 350px;
+.main div{
+    height: 200px;
     grid-gap: 20px;
-    grid-template-columns: 300px 1fr 300px;
-}
-.above-main div, .below-main div {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-}
-.below-main {
-    display: grid;
-    height: 350px;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 .image {
     width: 100%;
-}
-.bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 200px;
 }
 .follow {
     margin: auto;
