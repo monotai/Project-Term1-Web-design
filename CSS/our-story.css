@@ -33,28 +33,22 @@ body {
 .menu {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr) auto;
+    grid-gap: 20px;
 }
 .menu a {
     text-decoration: none;
     color: #FFFFFF;
     max-width: 50px;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
 }
-.head-left {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat( 3,auto);
-    grid-gap: 20px;
-}
-.head-left a {
-    max-width: 20px;
-    padding: 10px;
-}
+
 .about-chose {
-    padding: 10px;
+    box-sizing: border-box;
+    width: 120px;
+    text-align: center;
+    padding: 10px 0px;
     cursor: context-menu;
     background: none;
     margin: auto;
@@ -91,6 +85,16 @@ body {
 .chose {
     border-bottom: 2px solid #FFFFFF;
 }
+.head-left {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( 3,auto);
+    grid-gap: 20px;
+}
+.head-left a {
+    max-width: 20px;
+    padding: 10px;
+}
 .sign-in {
     margin: auto;
     margin-right: 40px;
@@ -103,11 +107,33 @@ body {
 .button-link {
     color: #FFFFFF;
     text-decoration: none;
+    
 }
-.bottom {
+.main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid #FFFFFF;
+    grid-template-rows: auto 1fr;
+    padding: 20px;
+    grid-gap: 20px;
+    color: #000000;
+}
+.above-main {
+    display: grid;
+    height: 350px;
+    grid-gap: 20px;
+    grid-template-columns: 300px 1fr 300px;
+}
+.above-main div, .below-main div {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+.below-main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.image {
+    width: 100%;
 }
 .follow {
     margin: auto;
