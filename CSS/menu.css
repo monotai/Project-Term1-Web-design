@@ -151,7 +151,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(60%);
 }
 .cart {
     border-radius: 16px;
