@@ -9,24 +9,24 @@
 <body>
   <div class="login-container">
     <h1>Log in</h1>
-    <form>
-      <div class="input-group">
-        <label for="username">
-          <i class="fas fa-user"></i>
-          Username
-        </label>
-        <input type="text" id="username" placeholder="Enter your username" required>
-      </div>
-      <div class="input-group">
-        <label for="password">
-          <i class="fas fa-lock"></i>
-          Password
-        </label>
-        <input type="password" id="password" placeholder="Enter your password" required>
-      </div>
-      <a href="#" class="forgot-password">Forgot password?</a>
-      <button type="submit" class="login-btn"><a href="./home.html"></a><b>Log in</b></a></button>
-    </form>
+    <form action="./home.html" method="GET">
+        <div class="input-group">
+          <label for="username">
+            <i class="fas fa-user"></i>
+            Username
+          </label>
+          <input type="text" id="username" placeholder="Enter your username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">
+            <i class="fas fa-lock"></i>
+            Password
+          </label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button type="submit" class="login-btn"><b>Log in</b></button>
+      </form>      
     <p class="or">Or sign up using</p>
     <div class="social-icons">
       <button class="social-btn">
