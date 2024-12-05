@@ -158,9 +158,9 @@ h1 {
 }
 
 .follow {
+    margin: auto;
     display: grid;
     grid-gap: 10px;
-    background-color: aqua;
 }
 .follow div {
     display: grid;

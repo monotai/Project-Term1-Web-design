@@ -152,7 +152,6 @@ h1 {
     backdrop-filter: brightness(50%);
 }
 .cart {
-    margin: auto;
     border-radius: 16px;
     display: grid;
     grid-template-rows: 1fr auto auto auto;
@@ -194,14 +193,17 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid #FFFFFF;
+    padding: 20px;
     backdrop-filter: brightness(40%);
 }
+
 .follow {
     margin: auto;
+    display: grid;
+    grid-gap: 10px;
 }
 .follow div {
     display: grid;
-    padding: 10px;
     grid-template-columns: auto 1fr;
     grid-gap: 5px;
 }

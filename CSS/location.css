@@ -21,7 +21,7 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 .brand {
     padding-left: 40px;
@@ -63,7 +63,7 @@ body {
     color: #FFFFFF;
     background-color: #AE6439;
     display: block;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #000000;
 }
 .about-content a:first-child {
     border-radius: 8px 8px 0px 0px;
@@ -141,14 +141,17 @@ body {
 .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
+    padding: 20px;
 }
+
 .follow {
     margin: auto;
+    display: grid;
+    grid-gap: 10px;
 }
 .follow div {
     display: grid;
-    padding: 10px;
     grid-template-columns: auto 1fr;
     grid-gap: 5px;
 }

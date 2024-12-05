@@ -18,13 +18,12 @@ body {
     background-attachment: fixed;  
     background-size: cover;
     color: #FFFFFF;
-    display: grid;
-    grid-template-rows: auto auto auto;
 }
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    backdrop-filter: brightness(40%);
 }
 .brand {
     padding-left: 40px;
@@ -110,14 +109,15 @@ body {
 }
 .main {
     display: grid;
-    grid-template-rows: auto auto;
-    padding: 20px;
+    grid-template-rows: 350px auto;
+    padding: 20px 80px;
     grid-gap: 20px;
     color: #000000;
+    text-align: center;
+    backdrop-filter: brightness(60%);
 }
 .above-main {
     display: grid;
-    height: 350px;
     grid-gap: 20px;
     grid-template-columns: 300px 1fr 300px;
 }
@@ -128,24 +128,37 @@ body {
 }
 .below-main {
     display: grid;
-    height: 350px;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.below-main div {
+    padding: auto;
+}
+.below-main div:nth-child(2) {
+    padding: 0px;
+}
+.below-main div:nth-child(2) img {
+    border-radius: 8px 8px 0px 0px;
+}
 .image {
+    margin: auto;
     width: 100%;
 }
 .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 200px;
+    border-top: 1px solid #FFFFFF;
+    padding: 20px;
+    backdrop-filter: brightness(40%);
 }
+
 .follow {
     margin: auto;
+    display: grid;
+    grid-gap: 10px;
 }
 .follow div {
     display: grid;
-    padding: 10px;
     grid-template-columns: auto 1fr;
     grid-gap: 5px;
 }
