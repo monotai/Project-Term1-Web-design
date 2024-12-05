@@ -1,131 +1,103 @@
-@font-face {
-    font-family: 'CustomFont'; /* Name your font family */
-    src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
   
-h1 {
-    font-family: 'CustomFont', sans-serif; /* Use the font family */
-}
-body {
-    background-color: black;
-    margin: 0px;
-}
-.container {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../IMAGE/home.png);
-    background-position: 0 -300px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    color: #FFFFFF;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-.header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 1px solid #FFFFFF;
-}
-.brand {
-    padding-left: 40px;
-}
-.menu {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) auto;
-    grid-gap: 20px;
-}
-.menu a {
-    text-decoration: none;
-    color: #FFFFFF;
-    max-width: 50px;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.about-chose {
-    box-sizing: border-box;
-    width: 120px;
-    text-align: center;
-    padding: 10px 0px;
-    cursor: context-menu;
-    background: none;
-    margin: auto;
-}
-
-.about-content {
-    display: none;
-    position: absolute;
-    text-align: center;
+  .login-container {
+    width: 350px;
+    background: #fff;
+    border: 1px solid #ccc;
     border-radius: 8px;
-}
-
-.about-content a {
-    max-width: none;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    background-color: #AE6439;
-    display: block;
-    border: 1px solid #FFFFFF;
-}
-.about-content a:first-child {
-    border-radius: 8px 8px 0px 0px;
-}
-.about-content a:last-child {
-    border-radius: 0px 0px 8px 8px;
-}
-
-.about:hover .about-content {
-    display: block;
-}
-.about-content:hover {
-    display: block;
-}
-.chose {
-    border-bottom: 2px solid #FFFFFF;
-}
-.head-left {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat( 3,auto);
-    grid-gap: 20px;
-}
-.head-left a {
-    max-width: 20px;
-    padding: 10px;
-}
-.sign-in {
-    margin: auto;
-    margin-right: 40px;
-    padding: 10px 20px;
-    border-radius: 16px;
-    cursor: pointer;
-    background-color: #000000;
-    border: 2px solid #FFFFFF;
-}
-.button-link {
-    color: #FFFFFF;
+    padding: 20px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 0px;
+    border-bottom:1px solid black;  
+  }
+  
+  .forgot-password {
+    font-size: 12px;
+    color: #007BFF;
     text-decoration: none;
-}
-.bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid #FFFFFF;
-}
-.follow {
-    margin: auto;
-}
-.follow div {
-    display: grid;
+    display: block;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .login-btn {
+    width: 70%;
     padding: 10px;
-    grid-template-columns: auto 1fr;
-    grid-gap: 5px;
-}
-.contact {
-    margin: auto;
-}
-.logo {
-    width: 20px;
-    margin: auto;
-}
+    background: linear-gradient(90deg, #ff7a00, #3c1806);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .or {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .social-icon {
+    width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  }
+  
+  
+  .signup a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  
