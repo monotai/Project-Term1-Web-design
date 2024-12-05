@@ -24,8 +24,9 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
     backdrop-filter: brightness(40%);
+    z-index: 9;
 }
 .brand {
     padding-left: 40px;
@@ -43,7 +44,6 @@ body {
     padding: 10px 20px;
     text-align: center;
 }
-
 .about-chose {
     box-sizing: border-box;
     width: 120px;
@@ -52,6 +52,13 @@ body {
     cursor: context-menu;
     background: none;
     margin: auto;
+}
+.about-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 10;
 }
 
 .about-content {
