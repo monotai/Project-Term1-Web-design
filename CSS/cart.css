@@ -144,6 +144,9 @@ body {
 .cart img {
     width: 100%;
 }
+.input-group {
+    margin: auto;
+}
 .button {
         margin: auto;
         margin-right: 40px;
@@ -155,12 +158,12 @@ body {
 }
 .cancel {
     margin: auto;
-        margin-right: 40px;
-        padding: 10px 20px;
-        border-radius: 16px;
-        cursor: pointer;
-        background-color: red;
-        border: 2px solid #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: red;
+    border: 2px solid #FFFFFF;
 }
 .follow {
     margin: auto;
