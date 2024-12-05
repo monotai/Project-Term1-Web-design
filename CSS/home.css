@@ -16,6 +16,7 @@ body {
     background-color: #756763;
 }
 .container {
+    position: relative;
     width: 100vw;
     background-image: url(../IMAGE/home.png);
     background-position: 0 -300px;
@@ -27,10 +28,14 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 .header {
+    top: 0px;
+    left: 0;
+    right: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-bottom: 1px solid #FFFFFF;
     backdrop-filter: brightness(40%);
+    z-index: 9;
 }
 h1 {
     font-weight: 100;
@@ -71,6 +76,7 @@ h1 {
     position: absolute;
     text-align: center;
     border-radius: 8px;
+    z-index: 10;
 }
 
 .about-content a {
@@ -80,7 +86,6 @@ h1 {
     background-color: #AE6439;
     display: block;
     border: 1px solid #FFFFFF;
-    z-index: -1;
 }
 .about-content a:first-child {
     border-radius: 8px 8px 0px 0px;
@@ -118,7 +123,7 @@ h1 {
     border: 2px solid #FFFFFF;
 }
 .main {
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(50%);    
     padding: 80px;
     font-size: 20px;
 }

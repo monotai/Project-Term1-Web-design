@@ -89,7 +89,7 @@ body {
 
 
 .chose {
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid #000000;
 }
 .sign-in {
     margin: auto;
@@ -121,18 +121,46 @@ body {
     border: 1px solid #000000;
     padding: 20px;
 }
+.head-cart {
+    padding: 20px;
+}
 .carts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    padding: 20px;
 }
 .cart {
-    height: 400px;
+    height: 440px;
     border: 1px solid black;
     padding: 20px;
 }
+.cart p {
+    text-align: center;
+}
+.cart div {
+    padding: 0px 40px;
+}
 .cart img {
     width: 100%;
+}
+.button {
+        margin: auto;
+        margin-right: 40px;
+        padding: 10px 20px;
+        border-radius: 16px;
+        cursor: pointer;
+        background-color: #AE6439;
+        border: 2px solid #FFFFFF;
+}
+.cancel {
+    margin: auto;
+        margin-right: 40px;
+        padding: 10px 20px;
+        border-radius: 16px;
+        cursor: pointer;
+        background-color: red;
+        border: 2px solid #FFFFFF;
 }
 .follow {
     margin: auto;

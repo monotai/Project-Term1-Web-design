@@ -25,6 +25,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid #FFFFFF;
+    backdrop-filter: brightness(40%);
 }
 .brand {
     padding-left: 40px;
@@ -108,25 +109,42 @@ body {
     text-decoration: none;
 }
 .main {
+    
     text-align: center;
     display: grid;
     grid-template-rows: auto auto auto;
     padding: 20px;
     grid-gap: 20px;
+    backdrop-filter: brightness(60%);
 }
 .main div{
-    height: 200px;
-    grid-gap: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px 100px;
+}
+.main div img {
+    width: 300px;
+    margin: auto;
 }
 .image {
     width: 100%;
 }
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #FFFFFF;
+    padding: 20px;
+    backdrop-filter: brightness(40%);
+}
+
 .follow {
     margin: auto;
+    display: grid;
+    grid-gap: 10px;
 }
 .follow div {
     display: grid;
-    padding: 10px;
     grid-template-columns: auto 1fr;
     grid-gap: 5px;
 }
