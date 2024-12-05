@@ -1,8 +1,19 @@
 @font-face {
-    font-family: 'CustomFont'; /* Name your font family */
+    font-family: 'Italianno'; /* Name your font family */
     src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
   }
-  
+  @font-face {
+    font-family: 'Jacques Francois';
+    src: url(../FONT/JacquesFrancois-Regular.ttf);
+}
+.font-Jacques-Francois {
+    font-family:'Jacques Francois' ;
+}
+.font-Italianno{
+    font-family: 'Italianno';
+    color: #AE6439;
+    font-size: 40px;
+}
 h1 {
     font-family: 'CustomFont', sans-serif; /* Use the font family */
 }
