@@ -47,6 +47,9 @@ h1 {
 }
 .brand {
     padding-left: 40px;
+    font-family: 'Italianno';
+    color: white;
+    font-size: 40px;
 
 }
 .menu {
