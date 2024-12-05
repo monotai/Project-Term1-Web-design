@@ -2,7 +2,11 @@
     font-family: 'CustomFont'; /* Name your font family */
     src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
   }
-  
+  .font-Italianno{
+    font-family: 'Italianno';
+    color: white;
+    font-size: 40px;
+}
 h1 {
     font-family: 'CustomFont', sans-serif; /* Use the font family */
 }
