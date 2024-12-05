@@ -134,6 +134,7 @@ body {
     height: 440px;
     border: 1px solid black;
     padding: 20px;
+    grid-gap: 10px;
 }
 .cart p {
     text-align: center;
@@ -181,4 +182,32 @@ body {
     width: 20px;
     margin: auto;
     filter: brightness(0);
+}
+.option1{
+    display: grid;
+    grid-template-columns: repeat(2,20px);
+    margin: auto;
+}
+.input-group{
+    position: absolute;
+    left: 180px;
+    background-color: #AE6439;
+    margin: auto;
+}
+
+.option2 label{
+    margin-left: 19px;
+}
+.option3 label{
+    margin-left: 30px;
+}
+.btn2{
+    margin-left: 20px;
+    border: none;
+}
+.btn {
+    margin: auto;
+}
+.option1 span, .option3 span{
+    margin-left: 15px;
 }
