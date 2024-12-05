@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffree</title>
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1 class="brand">The Coffree</h1>
             <div class="menu">
-                <a class="chose" href="./home.html">Home</a>
+                <a href="./home.html">Home</a>
                 <a href="./menu.html">Menu</a>
                 <a href="./location.html">Location</a>
                 <div class="about">
@@ -23,40 +23,38 @@
                 </div>
             </div>
             <div class="head-left">
-                <a href="./cart.html"><img class="logo" src="../IMAGE/logo/Shopping-cart.png"></a>
+                <a class="chose" href="./cart.html"><img class="logo" src="../IMAGE/logo/Shopping-cart.png"></a>
                 <a href="./profile.html"><img class="logo" src="../IMAGE/logo/User-Profile.png"></a>
                 <button class="sign-in"><a class="button-link" href="./profile.html">Sign In</a></button>
             </div>
         </div>
         <div class="main">
-<<<<<<< HEAD
-            <h1>Start your day with<br>The Coffree</h1>
-            <p>We use coffee beans from South America</p>
-            <P>Roasted with love</P>
-            <P>Welcome to our coffee shop website, we sells many various types of coffee and tea,
-                <br>and our brand name of the shop is. We are passionate about coffee and the art
-                <br> of perfect brewing. So, we make sure that our customers get to taste the best
-                <br> handpicked coffee beans from South America make it into unique coffee drinks.
-            </P>
-=======
-            <h1>Start your day with
-            <br>The Coffree</h1>
-            <div class="head-main">
-                <p>We use coffee beans from South America</p>
-                <img class="logo" src="../IMAGE/logo/Ellipse.png">
-                <p>Roasted with love</p>
+            <div class="left-main">
+                <div class="head-cart">
+                    <h1>Cart</h1>
+                    <button class="button"><a class="button-link" href="./menu.html">New Order</a></button>
+                    <button class="button-link button">Previuos Order</button>
+                </div>
+                <div class="carts">
+                    <div class="cart">
+                        <img class="image-cart" src="../IMAGE/product/image-3.png">
+                        <p>Espresso</p>
+                        <div>Quantity</div>
+                        <div>Sugar</div>
+                        <div>Size</div>
+                        <p>$2.50</p>
+                        <button class="button-link cancel">Cancel</button>
+                    </div>
+                </div>
             </div>
-            <p>Welcome to our coffee shop website, we sells
-            <br>many various types of coffee and tea,and our
-            <br>brand name of the shop is. We are passionate
-            <br>about coffee and the art of perfect brewing.
-            <br>So, we make sure that our customers get to
-            <br>taste the besthandpicked coffee beans from
-            <br>South America make it into unique coffee drinks.
-            </p>
->>>>>>> 5b1bec9e6dd01e66cdd0d9a2dcc9eecc2ee03ec4
-            <button>Try Out</button>
-            <div></div>
+            <div class="right-main">
+                <h1>Order Summary</h1>
+                <p>Item: 4</p>
+                <imput>Enter your code here</imput>
+                <button class="button-link button">Apply</button>
+                <p>Total Cost: $9.00</p>
+                <button class="button-link button">Pay Now</button>
+            </div>  
         </div>
         <div class="bottom">
             <div class="follow">Follow
@@ -68,6 +66,8 @@
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"></path></svg>
                     <div>X</div>
                 </div>
+                
+                
             </div>
             <div class="contact">Contact Us
                 <p>(+855) 12 222222</p>
@@ -75,14 +75,5 @@
             </div>
         </div> 
     </div>
-    <script>
-        function navigateToPage() {
-            var selectElement = document.getElementById('page-select');
-            var selectedValue = selectElement.value;
-            if (selectedValue) {
-                window.location.href = selectedValue;  // Redirect to the selected page
-            }
-        }
-    </script>
 </body>
 </html>

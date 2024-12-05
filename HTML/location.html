@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffree</title>
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/location.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1 class="brand">The Coffree</h1>
             <div class="menu">
-                <a class="chose" href="./home.html">Home</a>
+                <a href="./home.html">Home</a>
                 <a href="./menu.html">Menu</a>
-                <a href="./location.html">Location</a>
+                <a class="chose" href="./location.html">Location</a>
                 <div class="about">
                     <p class="about-chose">About</p>
                     <div class="about-content">
@@ -29,34 +29,22 @@
             </div>
         </div>
         <div class="main">
-<<<<<<< HEAD
-            <h1>Start your day with<br>The Coffree</h1>
-            <p>We use coffee beans from South America</p>
-            <P>Roasted with love</P>
-            <P>Welcome to our coffee shop website, we sells many various types of coffee and tea,
-                <br>and our brand name of the shop is. We are passionate about coffee and the art
-                <br> of perfect brewing. So, we make sure that our customers get to taste the best
-                <br> handpicked coffee beans from South America make it into unique coffee drinks.
-            </P>
-=======
-            <h1>Start your day with
-            <br>The Coffree</h1>
-            <div class="head-main">
-                <p>We use coffee beans from South America</p>
-                <img class="logo" src="../IMAGE/logo/Ellipse.png">
-                <p>Roasted with love</p>
+            <div class="locations">
+                <div class="location">
+                    <div class="where">
+                        <p>The Coffree</p>
+                        <br>
+                        <p>OCIC, Phom Penh
+                            <br>6 km away
+                        </p>
+                        <p class="open">Open</p>
+                    </div>
+                    <button class="order"><a class="button-link" href="./menu.html">Order Now</a></button>
+                </div>
             </div>
-            <p>Welcome to our coffee shop website, we sells
-            <br>many various types of coffee and tea,and our
-            <br>brand name of the shop is. We are passionate
-            <br>about coffee and the art of perfect brewing.
-            <br>So, we make sure that our customers get to
-            <br>taste the besthandpicked coffee beans from
-            <br>South America make it into unique coffee drinks.
-            </p>
->>>>>>> 5b1bec9e6dd01e66cdd0d9a2dcc9eecc2ee03ec4
-            <button>Try Out</button>
-            <div></div>
+            <div class="maps">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.5825745416473!2d104.90911947452811!3d11.653065142413745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109516bdea989b3%3A0x372d2c5e0e14b706!2z4Z6U4Z6O4Z-S4Z6M4Z634Z6P4Z-S4Z6Z4Z6f4Z6X4Z624Z6U4Z6F4Z-S4Z6F4Z-B4Z6A4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6M4Z644Z6H4Z644Z6Q4Z6b4Z6A4Z6Y4Z-S4Z6W4Z674Z6H4Z62!5e0!3m2!1skm!2skh!4v1733238379202!5m2!1skm!2skh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
         <div class="bottom">
             <div class="follow">Follow
@@ -68,6 +56,8 @@
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"></path></svg>
                     <div>X</div>
                 </div>
+                
+                
             </div>
             <div class="contact">Contact Us
                 <p>(+855) 12 222222</p>
@@ -75,14 +65,5 @@
             </div>
         </div> 
     </div>
-    <script>
-        function navigateToPage() {
-            var selectElement = document.getElementById('page-select');
-            var selectedValue = selectElement.value;
-            if (selectedValue) {
-                window.location.href = selectedValue;  // Redirect to the selected page
-            }
-        }
-    </script>
 </body>
 </html>

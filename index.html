@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customization Options</title>
+    <style>
+        /* Styling for the option group */
+        .option-group {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .option {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #A0522D; /* Brown color */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #8B4513; /* Darker brown for hover */
+        }
+
+        .value {
+            margin: 0 10px;
+            font-size: 16px;
+            color: #333;
+            min-width: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="option-group">
+        <div class="option">
+            <label>Quantity:</label>
+            <div class="input-group">
+                <button class="btn">-</button>
+                <span class="value">1</span>
+                <button class="btn">+</button>
+            </div>
+        </div>
+        <div class="option">
+            <label>Sugar:</label>
+            <div class="input-group">
+                <button class="btn">-</button>
+                <span class="value">50%</span>
+                <button class="btn">+</button>
+            </div>
+        </div>
+        <div class="option">
+            <label>Size:</label>
+            <div class="input-group">
+                <button class="btn">-</button>
+                <span class="value">L</span>
+                <button class="btn">+</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

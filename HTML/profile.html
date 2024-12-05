@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../CSS/profile.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Log in</h1>
+    <form action="./home.html" method="GET">
+        <div class="input-group">
+          <label for="username">
+            <i class="fas fa-user"></i>
+            Username
+          </label>
+          <input type="text" id="username" placeholder="Enter your username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">
+            <i class="fas fa-lock"></i>
+            Password
+          </label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button type="submit" class="login-btn"><b>Log in</b></button>
+      </form>      
+    <p class="or">Or sign up using</p>
+    <div class="social-icons">
+      <button class="social-btn">
+        <img src="../IMAGE/logo/facebooklogo.png" alt="Facebook Logo" class="social-icon">
+      </button>
+      <button class="social-btn">
+        <img src="../IMAGE/logo/insta.png" alt="Insta Logo" class="social-icon">
+      </button>
+      <button class="social-btn">
+        <img src="../IMAGE/logo/xlogo.png" alt="X Logo" class="social-icon">
+      </button>
+    </div>
+    <p class="signup">Or sign up using <a href="#">Sign up</a></p>
+  </div>
+</body>
+</html>
