@@ -19,11 +19,7 @@ body {
     position: relative;
     width: 100vw;
     background-image: url(../IMAGE/home.png);
-<<<<<<< HEAD
-    background-position: 0 -50px;
-=======
     background-position: 0 -300px;
->>>>>>> 5b1bec9e6dd01e66cdd0d9a2dcc9eecc2ee03ec4
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -37,9 +33,6 @@ body {
     right: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-<<<<<<< HEAD
-    border: 1px solid #FFFFFF;
-=======
     border-bottom: 1px solid #FFFFFF;
     backdrop-filter: brightness(40%);
     z-index: 9;
@@ -50,7 +43,6 @@ h1 {
 .header h1 {
     font-size: 45px;
     margin: 20px;
->>>>>>> 5b1bec9e6dd01e66cdd0d9a2dcc9eecc2ee03ec4
 }
 .brand {
     padding-left: 40px;
@@ -84,10 +76,7 @@ h1 {
     position: absolute;
     text-align: center;
     border-radius: 8px;
-<<<<<<< HEAD
-=======
     z-index: 10;
->>>>>>> 5b1bec9e6dd01e66cdd0d9a2dcc9eecc2ee03ec4
 }
 
 .about-content a {
@@ -130,21 +119,6 @@ h1 {
     padding: 10px 20px;
     border-radius: 16px;
     cursor: pointer;
-<<<<<<< HEAD
-    background-color: #000000;
-    border: 2px solid #FFFFFF;
-}
-.button-link {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.follow {
-    margin: auto;
-}
-.follow div {
-    display: grid;
-    padding: 10px;
-=======
     background-color: #AE6439;
     border: 2px solid #FFFFFF;
 }
@@ -195,7 +169,6 @@ h1 {
 }
 .follow div {
     display: grid;
->>>>>>> 5b1bec9e6dd01e66cdd0d9a2dcc9eecc2ee03ec4
     grid-template-columns: auto 1fr;
     grid-gap: 5px;
 }
