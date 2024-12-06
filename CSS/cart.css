@@ -131,13 +131,17 @@ body {
     padding: 20px;
 }
 .cart {
-    height: 440px;
+    height: 500px;
     border: 1px solid black;
     padding: 20px;
+    display: grid;
     grid-gap: 10px;
 }
 .cart p {
     text-align: center;
+}
+.cart p:first-child {
+    font-size: 30px;
 }
 .cart div {
     padding: 0px 40px;
@@ -186,28 +190,21 @@ body {
 .option1{
     display: grid;
     grid-template-columns: repeat(2,20px);
-    margin: auto;
 }
 .input-group{
-    position: absolute;
-    left: 180px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-color: #AE6439;
-    margin: auto;
+}
+.value {
+    padding: 0px 20px;
+    
 }
 
-.option2 label{
-    margin-left: 19px;
-}
-.option3 label{
-    margin-left: 30px;
-}
-.btn2{
-    margin-left: 20px;
-    border: none;
-}
 .btn {
     margin: auto;
-}
-.option1 span, .option3 span{
-    margin-left: 15px;
+    background-color: #AE6439;
+    border: 1px solid #AE6439;
+    border-radius: 4px;
 }
