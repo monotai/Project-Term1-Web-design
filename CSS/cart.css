@@ -7,12 +7,14 @@ h1 {
     font-family: 'CustomFont', sans-serif; /* Use the font family */
 }
 body {
-    background-color: black;
     margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container {
+    height: auto;
     width: 100vw;
-    background-color: #FFFFFF;
+    background-color: #e7e5e5;
     color: #000000;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -29,7 +31,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr) auto;
-    grid-gap: 20px;
+    grid-gap: 15px;
 }
 .menu a {
     text-decoration: none;
@@ -115,38 +117,19 @@ body {
 }
 .left-main{
     border: 1px solid #000000;
-    padding: 20px;
 }
 .right-main{
     border: 1px solid #000000;
     padding: 20px;
 }
+.right-main h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .head-cart {
-    padding: 20px;
+    margin-left: 40px;
 }
-.carts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-}
-.cart {
-    height: 440px;
-    border: 1px solid black;
-    padding: 20px;
-    grid-gap: 10px;
-}
-.cart p {
-    text-align: center;
-}
-.cart div {
-    padding: 0px 40px;
-}
-.cart img {
-    width: 100%;
-}
-.input-group {
-    margin: auto;
+.head-cart h1{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .button {
         margin: auto;
@@ -157,23 +140,41 @@ body {
         background-color: #AE6439;
         border: 2px solid #FFFFFF;
 }
-.cancel {
-    margin: auto;
-    text-align: center;
+.button-link-button{
+    margin-right: 40px;
+    margin-top: 30px;
     padding: 10px 20px;
-    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
     cursor: pointer;
-    background-color: red;
-    border: 2px solid #FFFFFF;
+    background-color: #3ED53E;
+    color: white;
+    border: none;
+}
+.button-link-button1{
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 25px;
+    padding: 10px 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3ED53E;
+    color: white;
+    border: none;
 }
 .follow {
     margin: auto;
 }
 .follow div {
     display: grid;
-    padding: 10px;
     grid-template-columns: auto 1fr;
-    grid-gap: 5px;
+    padding: 5px;
+}
+.follow p{
+    padding-top: 20px;
 }
 .contact {
     margin: auto;
@@ -183,31 +184,97 @@ body {
     margin: auto;
     filter: brightness(0);
 }
-.option1{
+.carts {
     display: grid;
-    grid-template-columns: repeat(2,20px);
-    margin: auto;
-}
-.input-group{
-    position: absolute;
-    left: 180px;
-    background-color: #AE6439;
-    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates responsive grid columns */
+    grid-template-rows: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
 }
 
-.option2 label{
-    margin-left: 19px;
+.cart {
+    background-color: #f9f9f9; /* Gives a soft background color */
+    padding: 20px;
+    border: 1px solid #000000; /* Border for separation */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spreads items inside the cart */
+    min-height: 250px;
 }
-.option3 label{
-    margin-left: 30px;
+
+.cart img {
+    width: 100%;
+    border-radius: 8px; /* Rounds image corners */
+    margin-bottom: 10px;
 }
-.btn2{
-    margin-left: 20px;
+
+.cart p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.cart .option1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex; 
+    align-items: center;
+    background-color: #AE6439;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.cancel {
+    background-color: red;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn{
+    margin-right: 20px;
+}
+.gp1 span, .gp3 span{
+    margin-right: 19px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.gp2 span{
+    margin-right: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.btn1{
+    margin-right: 14px;
+}
+.input-group button{
     border: none;
+    background-color: #AE6439;
+    color: white;
+    border-radius: 5px;
 }
-.btn {
-    margin: auto;
+.image-cart1{
+    height: 41%;
+    object-fit: contain;
 }
-.option1 span, .option3 span{
-    margin-left: 15px;
+.right-main input{
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #e7e5e5;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
