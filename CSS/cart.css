@@ -2,7 +2,24 @@
     font-family: 'CustomFont'; /* Name your font family */
     src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
   }
-  
+  @keyframes slideinleft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 h1 {
     font-family: 'CustomFont', sans-serif; /* Use the font family */
 }
@@ -10,6 +27,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    animation: slideinleft 0.3s ease-in;
 }
 .container {
     height: auto;
@@ -23,6 +41,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid #000000;
+    animation: slideIn 0.6s ease-out;
 }
 .brand {
     padding-left: 40px;
@@ -39,6 +58,7 @@ body {
     max-width: 50px;
     padding: 10px 20px;
     text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 .about-chose {
     box-sizing: border-box;
@@ -51,12 +71,19 @@ body {
 }
 
 .about-content {
-    display: none;
+    display: block;
     position: absolute;
     text-align: center;
     border-radius: 8px;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(10px); /* Start slightly below */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add animation for smooth fade and move */
 }
-
+.about:hover .about-content {
+    opacity: 1; /* Make it fully visible */
+    transform: translateY(0); /* Move it to its final position */
+}
 .about-content a {
     max-width: none;
     padding: 10px 20px;
@@ -101,6 +128,7 @@ body {
     cursor: pointer;
     background-color: #000000;
     border: 2px solid #FFFFFF;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .button-link {
     color: #FFFFFF;
@@ -139,6 +167,7 @@ body {
         cursor: pointer;
         background-color: #AE6439;
         border: 2px solid #FFFFFF;
+        transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .button-link-button{
     margin-right: 40px;
@@ -151,6 +180,7 @@ body {
     background-color: #3ED53E;
     color: white;
     border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .button-link-button1{
     margin-right: 40px;
@@ -164,6 +194,7 @@ body {
     background-color: #3ED53E;
     color: white;
     border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .follow {
     margin: auto;
@@ -237,6 +268,7 @@ body {
     border: 2px solid #fff;
     cursor: pointer;
     margin-top: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .btn{
     margin-right: 20px;
@@ -277,4 +309,24 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+}
+.button-link:hover {
+    transform: scale(1.1); /* Slightly scale the button */
+    background-color: #9c4f2d; /* Darker shade for the hover effect */
+}
+.sign-in:hover {
+    transform: scale(1.1); /* Slightly scale the button */
+    background-color: #9c4f2d; /* Darker shade for the hover effect */
+}
+.menu a:hover {
+    transform: scale(1.2); /* Slightly scale the menu item */
+    color: black;
+}
+.cancel:hover{
+    transform: scale(1.1); /* Slightly scale the button */
+    background-color: #d51b1b; /* Darker shade for the hover effect */
+}
+.button-link-button:hover, .button-link-button1:hover{
+    transform: scale(1.1); /* Slightly scale the button */
+    background-color: rgb(19, 195, 19); /* Darker shade for the hover effect */
 }

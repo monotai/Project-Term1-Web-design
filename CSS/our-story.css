@@ -6,6 +6,24 @@
     font-family: 'Jacques Francois';
     src: url(../FONT/JacquesFrancois-Regular.ttf);
 }
+@keyframes slideinleft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .font-Jacques-Francois {
     font-family:'Jacques Francois' ;
 }
@@ -20,6 +38,7 @@ h1 {
 body {
     background-color: black;
     margin: 0px;
+    animation: slideinleft 0.3s ease-in;
 }
 .container {
     width: 100vw;
@@ -37,6 +56,7 @@ body {
     border-bottom: 1px solid #FFFFFF;
     backdrop-filter: brightness(40%);
     z-index: 9;
+    animation: slideIn 0.6s ease-out;
 }
 h1 {
     font-weight: 100;
@@ -64,6 +84,7 @@ h1 {
     max-width: 50px;
     padding: 10px 20px;
     text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .about-chose {
@@ -77,13 +98,15 @@ h1 {
 }
 
 .about-content {
-    display: none;
+    display: block;
     position: absolute;
     text-align: center;
     border-radius: 8px;
     z-index: 10;
+    transform: translateY(10px); /* Start slightly below */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add animation for smooth fade and move */
+    opacity: 0;
 }
-
 .about-content a {
     max-width: none;
     padding: 10px 20px;
@@ -91,6 +114,10 @@ h1 {
     background-color: #AE6439;
     display: block;
     border: 1px solid #FFFFFF;
+}
+.about:hover .about-content {
+    opacity: 1; /* Make it fully visible */
+    transform: translateY(0); /* Move it to its final position */
 }
 .about-content a:first-child {
     border-radius: 8px 8px 0px 0px;
@@ -126,6 +153,7 @@ h1 {
     cursor: pointer;
     background-color: #000000;
     border: 2px solid #FFFFFF;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .button-link {
     color: #FFFFFF;
@@ -193,4 +221,12 @@ h1 {
 .logo {
     width: 20px;
     margin: auto;
+}
+.sign-in:hover {
+    transform: scale(1.1); /* Slightly scale the button */
+    background-color: #9c4f2d; /* Darker shade for the hover effect */
+}
+.menu a:hover {
+    transform: scale(1.2); /* Slightly scale the menu item */
+    color: white;
 }

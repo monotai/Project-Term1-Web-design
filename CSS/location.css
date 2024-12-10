@@ -2,13 +2,31 @@
     font-family: 'CustomFont'; /* Name your font family */
     src: url('../FONT/Italianno-Regular.ttf'); /* Locate the .ttf file within your directory*/
   }
-  
+  @keyframes slideinleft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 h1 {
     font-family: 'CustomFont', sans-serif; /* Use the font family */
 }
 body {
     background-color: black;
     margin: 0px;
+    animation: slideinleft 0.3s ease-in;
 }
 .container {
     width: 100vw;
@@ -22,6 +40,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-bottom: 1px solid #000000;
+    animation: slideIn 0.6s ease-out;
 }
 .brand {
     padding-left: 40px;
@@ -38,6 +57,7 @@ body {
     max-width: 50px;
     padding: 10px 20px;
     text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .about-chose {
@@ -51,10 +71,13 @@ body {
 }
 
 .about-content {
-    display: none;
+    display: block;
     position: absolute;
     text-align: center;
     border-radius: 8px;
+    transform: translateY(10px); /* Start slightly below */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add animation for smooth fade and move */
+    opacity: 0;
 }
 
 .about-content a {
@@ -64,6 +87,10 @@ body {
     background-color: #AE6439;
     display: block;
     border: 1px solid #000000;
+}
+.about:hover .about-content {
+    opacity: 1; /* Make it fully visible */
+    transform: translateY(0); /* Move it to its final position */
 }
 .about-content a:first-child {
     border-radius: 8px 8px 0px 0px;
@@ -98,6 +125,7 @@ body {
     border-radius: 16px;
     background-color: #AE6439;
     border: 2px solid #D9D9D9;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .main {
     display: grid;
@@ -162,4 +190,12 @@ body {
     width: 20px;
     margin: auto;
     filter: brightness(0);
+}
+.sign-in:hover {
+    transform: scale(1.1); /* Slightly scale the button */
+    background-color: #9c4f2d; /* Darker shade for the hover effect */
+}
+.menu a:hover {
+    transform: scale(1.2); /* Slightly scale the menu item */
+    color: black;
 }
