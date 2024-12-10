@@ -29,7 +29,7 @@
 }
 .font-Italianno{
     font-family: 'Italianno';
-    color: white;
+    color: #AE6439;
     font-size: 40px;
 }
 h1 {
@@ -194,8 +194,9 @@ h1 {
     border-radius: 8px 8px 0px 0px;
 }
 .image {
-    margin: auto;
     width: 100%;
+    object-fit: contain;
+    margin: auto;
 }
 .bottom {
     display: grid;
@@ -230,3 +231,58 @@ h1 {
     transform: scale(1.2); /* Slightly scale the menu item */
     color: white;
 }
+.taste-slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+    height: 130px; /* Adjust based on your image size */
+    object-fit: contain;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Ensure this is 100% * the number of images */
+}
+
+.slider img {
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+button.prev, button.next {
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+button.prev, button.next {
+   margin-left: 12px;
+   margin-top: 8px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.taste-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for the sliding effect */
+}
+.image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+.image3{
+    margin-left: 74px;
+}
+

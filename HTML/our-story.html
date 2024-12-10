@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffree</title>
     <link rel="stylesheet" href="../CSS/our-story.css">
+    <script src="https://kit.fontawesome.com/46f8b634df.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -30,28 +31,63 @@
         </div>
         <div class="main">
             <div class="above-main">
-                <div>
-                    <h1>Open</h1><br>
-                    <p>Monday-Sunday</p><br>
-                    <p>8 AM - 9 PM</p>
-                    <p >Hope you enjoy !</p>
+                <div class="date">
+                    <h1>Open</h1>
                     <br>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: larger;">Monday-Sunday</p>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: larger;">8 AM - 9 PM</p>
+                    <br>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">Hope you enjoy !</p>
+                    <hr style="border-style: solid; width: 80px; border-color: rgb(158, 158, 158);">
                 </div>
                 <div>
                     <h1 class="font-Italianno">Celebrating 49 years</h1>
-                    <P>Coffree was founded in 1975 by Bro Vat and Bro Wond, two visionary entrepreneurs who shared a passion for crafting the perfect coffee experience. While their shared dream brought them together in business, what many didn't know was that behind the grind and steam of their café, Bro Wond secretly harbored a deep and unspoken love for Bro Vat. Each cup of coffee they brewed seemed to carry whispers of emotions untold, the aroma mingling with the silent bond they shared—a love as warm and complex as their signature roast.</P>
+                    <p>Coffree was founded in 1975 by Bro Vat Bro Wond and Bro Chheav, Three visionary entrepreneurs who shared a passion for crafting the perfect coffee experience. While their shared dream brought them together in business, what many didn't know was that behind the grind and steam of their café, Bro Wond secretly harbored a deep and unspoken love for Bro Vat. Each cup of coffee they brewed seemed to carry whispers of emotions untold, the aroma mingling with the silent bond they shared—a love as warm and complex as their signature roast.</p>
                     <h1 class="font-Jacques-Francois">Since 1975</h1>
                 </div>
-                <div>
-                    <h1 class="font-Italianno">Find your tastse</h1>
-                    <img class="image" src="../IMAGE/product/image-4.png">
-                </div>
+                <div class="taste">
+                    <h1 class="font-Italianno">Find your taste</h1>
+                    <div class="taste-slider">
+                        <div class="slider">
+                            <img class="image1" src="../IMAGE/product/image-4.png" alt="Image 1" height="200">
+                            <img class="image2" src="../IMAGE/product/image-5.png" alt="Image 2" height="150">
+                            <img class="image3" src="../IMAGE/product/image-6.png" alt="Image 3" height="150">
+                        </div>
+                        </div>
+                            <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+            
+                <!-- JavaScript code here -->
+                <script>
+                    let currentSlide = 0;
+            
+                    function moveSlide(direction) {
+                        const slider = document.querySelector(".slider");
+                        const totalSlides = slider.children.length;
+            
+                        // Update the current slide index
+                        currentSlide += direction;
+            
+                        // Wrap around if necessary
+                        if (currentSlide < 0) {
+                            currentSlide = totalSlides - 1;
+                        } else if (currentSlide >= totalSlides) {
+                            currentSlide = 0;
+                        }
+            
+                        // Move the slider
+                        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+                </script>
             </div>
             <div class="below-main">
                 <div>
                     <h1 class="font-Italianno">Original Taste </h1>
-                    <img class="image" src="../IMAGE/product/image-2.png">
-                    <p>“Coffree's Original Cold Brew™ Iced Coffee is crafted daily using a unique cold-drip process that preserves the rich flavor and bold strength of the beans while delivering a coffee that's two-thirds”</p>
+                    <div class="origin">
+                        <img class="image" src="../IMAGE/product/image-2.png" height="300">
+                        <p>“Coffree's Original Cold Brew™ Iced Coffee is crafted daily using a unique cold-drip process that preserves the rich flavor and bold strength of the beans while delivering a coffee that's two-thirds”</p>
+                    </div>
                 </div>
                 <div>
                     <img class="image" src="../IMAGE/product/image-10.png">
@@ -60,8 +96,10 @@
                 </div>
                 <div>
                     <h1 class="font-Italianno">Customer Favorite</h1>
-                    <img class="image" src="../IMAGE/product/image-5.png">
-                    <p>Coffree's Iced pumpkin latte is a crowd favorite, combining our rich, smooth cold brew with the subtle sweetness of natural vanilla and a splash of creamy milk. It's the ideal balance of bold coffee flavor and indulgent smoothness, crafted to brighten your day with every sip.</p>
+                    <div class="favorite">
+                        <img class="image" src="../IMAGE/product/image-5.png" height="300">
+                        <p>Coffree's Iced pumpkin latte is a crowd favorite, combining our rich, smooth cold brew with the subtle sweetness of natural vanilla and a splash of creamy milk. It's the ideal balance of bold coffee flavor and indulgent smoothness, crafted to brighten your day with every sip.</p>
+                    </div>
                 </div>
             </div>
         </div>
