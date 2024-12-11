@@ -171,18 +171,18 @@ h1 {
 }
 .above-main {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 300px 1fr 300px;
+    grid-gap: 18px;
+    grid-template-columns: 270px 1fr 270px;
 }
 .above-main div, .below-main div {
     background-color: white;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
 }
 .below-main {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 18px;
+    grid-template-columns: repeat(3,430px);
 }
 .below-main div {
     padding: auto;
@@ -266,7 +266,7 @@ button.prev, button.next {
 
 button.prev, button.next {
    margin-left: 12px;
-   margin-top: 8px;
+   margin-top: 20px;
 }
 
 button.prev:hover, button.next:hover {
@@ -281,10 +281,12 @@ button.prev:hover, button.next:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 35px;
+    margin-bottom: 15px;
 }
 .image3{
-    margin-left: 35px;
+    margin-left: 28px;
+    margin-bottom: 15px;
 }
 
 
@@ -295,13 +297,72 @@ button.prev:hover, button.next:hover {
         font-size: 18px;
     }
 }
-
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1199px) {
-    body {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 40px;
+    }
+    .header h1 {
+        font-size: 45px;
+        margin: auto 0;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(3, auto) auto;
+        gap: 20px;
+    }
+    .menu a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .main {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 15px;
+        padding: 30px;
+    }
+    .above-main {
+        grid-template-columns: 270px 1fr 270px;
+        gap: 15px;
+    }
+    .below-main {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 40px;
+    }
+    .follow {
         font-size: 16px;
     }
+    .contact {
+        font-size: 16px;
+    }
+    .main p {
+        font-size: 18px;
+    }
+    .main h1{
+        font-size: 40px;
+    }
+    .image2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .image3{
+        margin-left: 35px;
+    }
+    .image1{
+        height: 200px;
+    }
 }
+
+
 
 /* For smartphones */
 @media (max-width: 767px) {
