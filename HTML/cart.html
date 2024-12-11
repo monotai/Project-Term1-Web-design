@@ -76,7 +76,7 @@
                         <button class="button-link cancel">Cancel</button>
                     </div>
                     <div class="cart">
-                        <img class="image-cart" src="../IMAGE/product/image-4.png">
+                        <img class="image-cart" src="../IMAGE/product/image-4.png" height="270">
                         <p>Espresso</p>
                         <div class="option1">
                             <label>Quantity:</label>
@@ -148,7 +148,7 @@
                         <button class="button-link cancel">Cancel</button>
                     </div>
                     <div class="cart">
-                        <img class="image-cart1" src="../IMAGE/product/image-8.png">
+                        <img class="image-cart2" src="../IMAGE/product/image-8.png">
                         <p>Espresso</p>
                         <div class="option1">
                             <label>Quantity:</label>
@@ -183,7 +183,55 @@
                         <p>$2.50</p>
                         <button class="button-link cancel">Cancel</button>
                     </div>
+                   
                 </div>
+                <script>
+                    // JavaScript functionality for quantity, sugar, and size
+                    document.querySelectorAll(".gp1 .btn, .gp1 .btn2").forEach(button => {
+                        button.addEventListener("click", function () {
+                            const valueSpan = this.closest(".gp1").querySelector(".value");
+                            let currentValue = parseInt(valueSpan.textContent);
+                
+                            if (this.classList.contains("btn") && currentValue > 1) {
+                                currentValue--; 
+                            } else if (this.classList.contains("btn2")) {
+                                currentValue++; 
+                            }
+                
+                            valueSpan.textContent = currentValue;
+                        });
+                    });
+                
+                    document.querySelectorAll(".gp2 .btn1, .gp2 .btn2").forEach(button => {
+                        button.addEventListener("click", function () {
+                            const valueSpan = this.closest(".gp2").querySelector(".value");
+                            let currentValue = parseInt(valueSpan.textContent.replace("%", ""));
+                
+                            if (this.classList.contains("btn1") && currentValue > 0) {
+                                currentValue -= 10; 
+                            } else if (this.classList.contains("btn2") && currentValue < 100) {
+                                currentValue += 10; 
+                            }
+                            valueSpan.textContent = `${currentValue}%`;
+                        });
+                    });
+                
+                    const sizeOptions = ["S", "M", "L"];
+                    document.querySelectorAll(".gp3 .btn, .gp3 .btn2").forEach(button => {
+                        button.addEventListener("click", function () {
+                            const valueSpan = this.closest(".gp3").querySelector(".value");
+                            let currentIndex = sizeOptions.indexOf(valueSpan.textContent);
+                
+                            if (this.classList.contains("btn") && currentIndex > 0) {
+                                currentIndex--; 
+                            } else if (this.classList.contains("btn2") && currentIndex < sizeOptions.length - 1) {
+                                currentIndex++; 
+                            }
+                
+                            valueSpan.textContent = sizeOptions[currentIndex];
+                        });
+                    });
+                </script>
             </div>
             <div class="right-main" id="summary">
                 <h1>Order Summary</h1>

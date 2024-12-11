@@ -33,7 +33,7 @@
     font-size: 40px;
 }
 h1 {
-    font-family: 'CustomFont', sans-serif; /* Use the font family */
+    font-family: 'CustomFont', sans-serif; 
 }
 body {
     background-color: black;
@@ -238,7 +238,7 @@ h1 {
     align-items: center;
     max-width: 100%;
     width: 90%;
-    height: 130px; /* Adjust based on your image size */
+    height: 130px; 
     object-fit: contain;
 }
 
