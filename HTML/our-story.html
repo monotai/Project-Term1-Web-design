@@ -48,35 +48,28 @@
                 <div class="taste">
                     <h1 class="font-Italianno">Find your taste</h1>
                     <div class="taste-slider">
-                        <div class="slider">
-                            <img class="image1" src="../IMAGE/product/image-4.png" alt="Image 1" height="200">
-                            <img class="image2" src="../IMAGE/product/image-5.png" alt="Image 2" height="150">
-                            <img class="image3" src="../IMAGE/product/image-6.png" alt="Image 3" height="150">
+                        <div class="slider" style="background-color: aqua;">
+                            <img class="image1 image" src="../IMAGE/product/image-4.png" alt="Image 1">
+                            <img class="image2 image" src="../IMAGE/product/image-5.png" alt="Image 2">
+                            <img class="image3 image" src="../IMAGE/product/image-6.png" alt="Image 3">
                         </div>
                         </div>
                             <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
                             <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
             
-                <!-- JavaScript code here -->
                 <script>
                     let currentSlide = 0;
             
                     function moveSlide(direction) {
                         const slider = document.querySelector(".slider");
                         const totalSlides = slider.children.length;
-            
-                        // Update the current slide index
                         currentSlide += direction;
-            
-                        // Wrap around if necessary
                         if (currentSlide < 0) {
                             currentSlide = totalSlides - 1;
                         } else if (currentSlide >= totalSlides) {
                             currentSlide = 0;
                         }
-            
-                        // Move the slider
                         slider.style.transform = `translateX(-${currentSlide * 100}%)`;
                     }
                 </script>
@@ -84,8 +77,8 @@
             <div class="below-main">
                 <div>
                     <h1 class="font-Italianno">Original Taste </h1>
-                    <div class="origin">
-                        <img class="image" src="../IMAGE/product/image-2.png" height="300">
+                    <div id="origin">
+                        <div><img class="image" src="../IMAGE/product/image-2.png"></div>
                         <p>“Coffree's Original Cold Brew™ Iced Coffee is crafted daily using a unique cold-drip process that preserves the rich flavor and bold strength of the beans while delivering a coffee that's two-thirds”</p>
                     </div>
                 </div>
@@ -97,7 +90,7 @@
                 <div>
                     <h1 class="font-Italianno">Customer Favorite</h1>
                     <div class="favorite">
-                        <img class="image" src="../IMAGE/product/image-5.png" height="300">
+                        <img class="image" src="../IMAGE/product/image-5.png">
                         <p>Coffree's Iced pumpkin latte is a crowd favorite, combining our rich, smooth cold brew with the subtle sweetness of natural vanilla and a splash of creamy milk. It's the ideal balance of bold coffee flavor and indulgent smoothness, crafted to brighten your day with every sip.</p>
                     </div>
                 </div>
