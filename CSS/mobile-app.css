@@ -206,3 +206,59 @@ body {
     transform: scale(1.2); /* Slightly scale the menu item */
     color: white;
 }
+/* For desktops */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .header h1 {
+        padding: 0px;
+        margin: auto;
+        font-size: 65px;
+    }
+    .menu {
+        margin: auto;
+        font-size: 16px;
+    }
+    .main {
+        padding: 0;
+    }
+    .main h1 {
+        font-size: 28px;
+    }
+    .main div {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main div img {
+        margin: auto;
+    }
+    .main p {
+        font-size: 16px;
+    }
+    .bottom {
+        font-size: 14px;
+    }
+    .follow div {
+        margin: auto;
+        margin-left: 0;
+    }
+}

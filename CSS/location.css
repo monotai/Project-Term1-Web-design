@@ -30,6 +30,7 @@ body {
 }
 .container {
     width: 100vw;
+    height: 100vh;
     background-color: #FFFFFF;
     color: #000000;
     display: grid;
@@ -214,6 +215,9 @@ body {
 
 /* For smartphones */
 @media (max-width: 767px) {
+    .container {
+        height: auto;
+    }
     .header {
         display: grid;
         grid-template-columns: 1fr;

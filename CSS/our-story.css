@@ -231,24 +231,25 @@ h1 {
     transform: scale(1.2); /* Slightly scale the menu item */
     color: white;
 }
-
-/* .taste-slider {
-} */
+.taste-slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+    height: 130px; /* Adjust based on your image size */
+    object-fit: contain;
+}
 
 .slider {
-    padding: 0;
-    display: grid;
-    height: 200px;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
     transition: transform 0.5s ease-in-out; /* Ensure this is 100% * the number of images */
 }
 
 .slider img {
-    margin: auto;
-    height: 100%;
     width: 100%;
-    border: 2px solid black;
+    object-fit: contain;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -272,14 +273,21 @@ button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 .taste-slider {
+    display: flex;
     transition: transform 0.5s ease-in-out; /* Smooth transition for the sliding effect */
 }
-/* .image2{
 
+.image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
 }
 .image3{
+    margin-left: 35px;
+}
 
-} */
+
 
 /* For desktops */
 @media (min-width: 1200px) {
