@@ -222,6 +222,9 @@ body {
 
 /* For smartphones */
 @media (max-width: 767px) {
+    .container {
+        background-position: 0;
+    }
     .header {
         display: grid;
         grid-template-columns: 1fr;
