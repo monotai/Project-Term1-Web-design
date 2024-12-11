@@ -286,3 +286,66 @@ button.prev:hover, button.next:hover {
     margin-left: 74px;
 }
 
+/* For desktops */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .header h1 {
+        padding: 0px;
+        margin: auto;
+        font-size: 65px;
+    }
+    .menu {
+        margin: auto;
+        font-size: 16px;
+    }
+    .main {
+        padding: 40px;
+        height: auto;
+    }
+    .above-main {
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 20px;
+        background-color: aqua;
+    }
+    .below-main {
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 20px;
+    }
+    .main h1 {
+        font-size: 28px;
+    }
+    .main img {
+        width: 10px;
+    }
+    .main p {
+        font-size: 16px;
+    }
+    .bottom {
+        font-size: 14px;
+    }
+    .follow div {
+        margin: auto;
+        margin-left: 0;
+    }
+}
