@@ -189,28 +189,15 @@ h1 {
     grid-gap: 10px;
     background-color: #FEFEFE;
 }
-.contain-product {
-    margin: auto;
-    width: 100%;
-    border-radius: 16px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    object-fit: contain;
-}
-.product {
-    height: 100%;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .cart p {
     margin: auto;
     font-weight: bold;
     text-align: center;
     color: #000;
+}
+.name {
+    font-size: 28px;
 }
 .order {
     margin: auto;
@@ -252,4 +239,98 @@ h1 {
 .menu a:hover {
     transform: scale(1.2); /* Slightly scale the menu item */
     color: white;
+}
+
+/* For desktops */
+@media (min-width: 1200px) {
+    .contain-product {
+        margin: auto;
+        width: 100%;
+        border-radius: 16px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        object-fit: contain;
+    }
+    .product {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .contain-product {
+        margin: auto;
+        width: 100%;
+        border-radius: 16px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        object-fit: contain;
+    }
+    .product {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* For smartphones */
+@media (max-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .header h1 {
+        padding: 0px;
+        margin: auto;
+        font-size: 65px;
+    }
+    .menu {
+        margin: auto;
+        font-size: 16px;
+    }
+    .text-overlay {
+        font-size: 18px;
+        padding-left: 25px;
+    }
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .main h1 {
+        font-size: 28px;
+    }
+    .cart {
+        margin: auto;
+        box-sizing: border-box;
+        width: 100%;
+        height: 600px;
+        box-sizing: border-box;
+    }
+    
+    .contain-product {
+        margin: auto;
+    }
+    .product {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .bottom {
+        font-size: 14px;
+    }
+    .follow div {
+        margin: auto;
+        margin-left: 0;
+    }
 }

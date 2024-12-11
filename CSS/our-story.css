@@ -276,13 +276,80 @@ button.prev:hover, button.next:hover {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Smooth transition for the sliding effect */
 }
+
 .image2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 .image3{
-    margin-left: 74px;
+    margin-left: 35px;
 }
 
+
+
+/* For desktops */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .header h1 {
+        padding: 0px;
+        margin: auto;
+        font-size: 65px;
+    }
+    .menu {
+        margin: auto;
+        font-size: 16px;
+    }
+    .main {
+        padding: 40px;
+        height: auto;
+        grid-template-rows: auto auto;
+    }
+    .above-main {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .below-main {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    #origin {
+        padding: auto;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .main h1 {
+        font-size: 28px;
+    }
+    .main p {
+        font-size: 16px;
+    }
+    .bottom {
+        font-size: 14px;
+    }
+    .follow div {
+        margin: auto;
+        margin-left: 0;
+    }
+}

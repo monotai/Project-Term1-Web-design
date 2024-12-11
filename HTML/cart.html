@@ -32,8 +32,11 @@
             <div class="left-main">
                 <div class="head-cart">
                     <h1>Cart</h1>
-                    <button class="button-link button"><a class="button-link" href="./menu.html">New Order</a></button>
-                    <button class="button-link button">Previuos Order</button>
+                    <div>
+                        <button class="button-link button"><a class="button-link" href="./menu.html">New Order</a></button>
+                        <button class="button-link button">Previuos Order</button>
+                        <button id="scrollButton" class="button-link button">Summary</button>
+                    </div>
                 </div>
                 <div class="carts">
                     <div class="cart">
@@ -145,7 +148,7 @@
                         <button class="button-link cancel">Cancel</button>
                     </div>
                     <div class="cart">
-                        <img class="image-cart1" src="../IMAGE/product/image-5.png">
+                        <img class="image-cart1" src="../IMAGE/product/image-8.png">
                         <p>Espresso</p>
                         <div class="option1">
                             <label>Quantity:</label>
@@ -182,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right-main">
+            <div class="right-main" id="summary">
                 <h1>Order Summary</h1>
                 <p style="font-size: larger;">ITEM: 4</p>
                 <p style="font-weight: 600; font-size: larger;">PROMO CODE</p>
@@ -215,5 +218,13 @@
             </div>
         </div> 
     </div>
+    <script>
+        document.getElementById("scrollButton").addEventListener("click", function () {
+            document.getElementById("summary").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+    </script>
 </body>
 </html>
