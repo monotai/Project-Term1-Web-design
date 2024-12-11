@@ -21,7 +21,7 @@
     }
 }
 h1 {
-    font-family: 'CustomFont', sans-serif; /* Use the font family */
+    font-family: 'CustomFont', sans-serif; 
 }
 body {
     margin: 0px;
@@ -152,6 +152,7 @@ body {
 }
 .right-main h1{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
 }
 .head-cart {
     margin-left: 40px;
@@ -217,26 +218,26 @@ body {
 }
 .carts {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates responsive grid columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     grid-template-rows: repeat(3, minmax(300px, 1fr));
     gap: 10px;
     padding: 10px;
 }
 
 .cart {
-    background-color: #f9f9f9; /* Gives a soft background color */
+    background-color: #f9f9f9; 
     padding: 20px;
-    border: 1px solid #000000; /* Border for separation */
-    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #000000; 
+    border-radius: 8px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Spreads items inside the cart */
+    justify-content: space-between; 
     min-height: 250px;
 }
 
 .cart img {
     width: 100%;
-    border-radius: 8px; /* Rounds image corners */
+    border-radius: 8px; 
     margin-bottom: 10px;
 }
 
@@ -295,7 +296,11 @@ body {
     border-radius: 5px;
 }
 .image-cart1{
-    height: 41%;
+    height: 44%;
+    object-fit: contain;
+}
+.image-cart2{
+    height: 40%;
     object-fit: contain;
 }
 .right-main input{
@@ -314,24 +319,24 @@ body {
     display: none;
 }
 .button-link:hover {
-    transform: scale(1.1); /* Slightly scale the button */
-    background-color: #9c4f2d; /* Darker shade for the hover effect */
+    transform: scale(1.1); 
+    background-color: #9c4f2d; 
 }
 .sign-in:hover {
-    transform: scale(1.1); /* Slightly scale the button */
-    background-color: #9c4f2d; /* Darker shade for the hover effect */
+    transform: scale(1.1); 
+    background-color: #9c4f2d; 
 }
 .menu a:hover {
-    transform: scale(1.2); /* Slightly scale the menu item */
+    transform: scale(1.2); 
     color: black;
 }
 .cancel:hover{
-    transform: scale(1.1); /* Slightly scale the button */
-    background-color: #d51b1b; /* Darker shade for the hover effect */
+    transform: scale(1.1); 
+    background-color: #d51b1b; 
 }
 .button-link-button:hover, .button-link-button1:hover{
-    transform: scale(1.1); /* Slightly scale the button */
-    background-color: rgb(19, 195, 19); /* Darker shade for the hover effect */
+    transform: scale(1.1); 
+    background-color: rgb(19, 195, 19); 
 }
 /* For desktops */
 @media (min-width: 1200px) {

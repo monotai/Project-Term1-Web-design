@@ -29,7 +29,7 @@
     color: white;
 }
 h1 {
-    font-family: 'CustomFont', sans-serif; /* Use the font family */
+    font-family: 'CustomFont', sans-serif; 
 }
 .main h1{
     font-family: 'Jacques Francois';
@@ -199,11 +199,11 @@ body {
     margin: auto;
 }
 .sign-in:hover {
-    transform: scale(1.1); /* Slightly scale the button */
-    background-color: #9c4f2d; /* Darker shade for the hover effect */
+    transform: scale(1.1); 
+    background-color: #9c4f2d; 
 }
 .menu a:hover {
-    transform: scale(1.2); /* Slightly scale the menu item */
+    transform: scale(1.2); 
     color: white;
 }
 /* For desktops */
