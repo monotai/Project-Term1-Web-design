@@ -241,13 +241,10 @@ h1 {
     justify-content: center;
     overflow: hidden;
     align-items: center;
-<<<<<<< HEAD
     height: 130px; /* Adjust based on your image size */
-=======
     max-width: 100%;
     width: 90%;
     height: 130px; 
->>>>>>> 6ae28245148796f6633739f9eac4712d30bf42d6
     object-fit: contain;
 }
 
@@ -437,7 +434,7 @@ button.prev:hover, button.next:hover {
         margin-right: 0;
     }
     .main {
-        padding: 40px;
+        padding: 20px;
     }
     .main h1 {
         font-size: 28px;
