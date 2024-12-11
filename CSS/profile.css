@@ -102,7 +102,7 @@ body {
   
   @media (max-width: 768px) {
     .login-container {
-      width: 220px;
+      width: 240px;
     }
     .social-icons {
       display: flex;
