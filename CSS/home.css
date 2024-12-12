@@ -74,6 +74,8 @@ h1 {
 }
 .logo-menu {
     display: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 .menu {
     margin: auto;
@@ -293,9 +295,6 @@ h1 {
         font-size: 65px;
         border-bottom: 1px solid #FFFFFF;
     }
-    .box-menu {
-        margin-left: 0;
-    }
     .menu {
         display: none;
     }
@@ -317,6 +316,8 @@ h1 {
     }
     .logo-menu:hover {
         margin-top: 11px;
+        margin-left: 0;
+        padding: 0;
     }
     .head-left {
         margin-top: 0;
