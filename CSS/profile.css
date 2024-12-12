@@ -9,7 +9,7 @@ body {
   }
   
   .login-container {
-    width: 350px;
+    width: 300px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -94,11 +94,23 @@ body {
   height: 35px;
   margin-right: 10px;
   }
-  
-  
+
   .signup a {
     color: #007BFF;
     text-decoration: none;
   }
   
-  
+  @media (max-width: 768px) {
+    .login-container {
+      width: 240px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .social-btn {
+      padding: 0;
+      width: auto;
+    }
+  }
