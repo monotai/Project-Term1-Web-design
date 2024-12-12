@@ -318,10 +318,11 @@ h1 {
     .logo-menu:hover {
         margin-top: 11px;
     }
+    .logo-menu:hover .header div:last-child { 
+        display: none;
+    }
     .head-left {
         margin-top: 0;
-        display: grid;
-        grid-template-columns: auto auto auto;
     }
     .sign-in {
         margin-right: 0;

@@ -396,8 +396,8 @@ body {
         grid-gap: 20px;
     }
     .head-cart .button:last-child {
+        grid-column: 1 / 3;
         display: block;
-        margin: auto;
     }
     .bottom {
         font-size: 14px;
